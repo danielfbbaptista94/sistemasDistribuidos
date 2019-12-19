@@ -1,0 +1,8 @@
+
+
+> gcc -c -Wall -Werror -fpic dll.c
+>> gcc -shared -o libcalc.so dll.o
+>>> gcc -L//home/aluno/Downloads/dll -Wall -o prog main.c -lcalc
+>>>> LD_LIBRARY_PATH=/home/aluno/Desktop/DLL/:$LD_LIBRARY_PATH
+>>>>> export LD_LIBRARY_PATH=/home/aluno/Desktop/DLL/:$LD_LIBRARY_PATH
+>>>>>> ./prog
